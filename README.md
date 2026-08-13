@@ -1,32 +1,219 @@
-# React + TypeScript + Vite
+# ArtVista 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+ArtVista is a full-stack web application designed to provide a platform for exploring and showcasing artwork. The application provides a modern interface for users to browse different artworks and access pages such as Home, Gallery, About, Contact, Login, and Sign Up.
 
-Currently, two official plugins are available:
+## 1. Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ArtVista is built using React, TypeScript, and Vite. It provides a responsive and user-friendly interface for displaying artwork and navigating through different sections of the application.
 
-## React Compiler
+The project demonstrates frontend development concepts including:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Component-based architecture
+* React routing/navigation
+* User authentication interface
+* Gallery and artwork presentation
+* Reusable components
+* Responsive UI design
+* TypeScript development
 
-## Expanding the Oxlint configuration
+## 2. Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* 🏠 Home page
+* 🎨 Artwork gallery
+* 👤 Login page
+* 📝 Sign-up page
+* ℹ️ About page
+* 📞 Contact page
+* 🧭 Navigation bar
+* 📱 Responsive design
+* 🖼️ Artwork display
+* 🔐 Authentication interface
+* 📄 Reusable React components
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 3. Technology Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* HTML
+* CSS
+
+### Development Tools
+
+* VS Code
+* npm
+* Git
+* GitHub
+
+## 4. Project Structure
+
+```text
+Art-vista-project/
+│
+├── public/
+│   ├── favicon.svg
+│   ├── icons.svg
+│   └── index.html
+│
+├── src/
+│   ├── Pages/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── Index.tsx
+│   │   ├── Login.tsx
+│   │   └── SignUp.tsx
+│   │
+│   ├── components/
+│   │   ├── Footer.tsx
+│   │   └── Navbar.tsx
+│   │
+│   ├── contexts/
+│   │   └── AuthContext.tsx
+│   │
+│   ├── assets/
+│   │   └── hero.png
+│   │
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+│
+├── screenshots/
+│   ├── home-page.png
+│   ├── gallery-page.png
+│   ├── login-page.png
+│   └── final-output.png
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 5. Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Srisailakshmi29/Art-vista-project.git
+```
+
+Move into the project directory:
+
+```bash
+cd Art-vista-project
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## 6. Run the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Vite will provide a local URL, usually:
+
+```text
+http://localhost:5173
+```
+
+Open the URL in your browser.
+
+## 7. Available Pages
+
+### Home
+
+The home page provides the main introduction to ArtVista and highlights the artwork platform.
+
+### Gallery
+
+The gallery displays available artworks in an organized interface.
+
+### About
+
+Provides information about the ArtVista platform.
+
+### Contact
+
+Provides a way for users to access contact information.
+
+### Login
+
+Provides the user login interface.
+
+### Sign Up
+
+Allows new users to access the registration interface.
+
+## 8. Screenshots
+
+Project screenshots are available in the `screenshots/` folder.
+
+### Home Page
+
+![Home Page](screenshots/home-page.png)
+
+### Gallery
+
+![Gallery](screenshots/gallery-page.png)
+
+### Login
+
+![Login](screenshots/login-page.png)
+
+### Final Output
+
+![Final Output](screenshots/outputs.png)
+
+
+
+## 9. How the Application Works
+
+```text
+User
+  ↓
+ArtVista Home Page
+  ↓
+Navigation
+  ↓
+Gallery / About / Contact
+  ↓
+Login / Sign Up
+  ↓
+Artwork Exploration
+```
+
+The application uses React components and TypeScript to organize the user interface into reusable sections.
+
+## 10. GitHub Repository
+
+Repository:
+
+https://github.com/Srisailakshmi29/Art-vista-project
+
+## 11. Future Improvements
+
+* Add backend API integration
+* Add database support
+* Add real user authentication
+* Add artwork upload functionality
+* Add artist profiles
+* Add artwork search and filtering
+* Add favorites and likes
+* Add user dashboard
+* Deploy the application to a cloud platform
+
+## 12. Conclusion
+
+ArtVista demonstrates the development of a modern React and TypeScript web application using Vite. The project focuses on artwork presentation, navigation, reusable components, and a user-friendly interface.
